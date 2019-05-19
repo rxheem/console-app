@@ -12,7 +12,7 @@ class HomeNavigation extends Component {
 
   render() {
     return (
-      <div style={{ paddingTop: '10px' }}>
+      <div>
         <Navbar bg='light' expand='lg'>
           <Navbar.Brand href='#home'>Console Studios</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />

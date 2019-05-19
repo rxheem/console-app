@@ -20,7 +20,10 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "sweetalert": "^2.1.2",
-    "validator": "^10.11.0"
+    "validator": "^10.11.0",
+    "prop-types": "^15.7.2",
+    "popper": "^1.0.1",
+    "bcryptjs": "^2.4.3"
   },
   "scripts": {
     "start": "react-scripts start",

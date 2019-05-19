@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Checkbox, Form, Container } from 'semantic-ui-react';
-import Link from 'react-router-dom/Link'
+import Link from 'react-router-dom/Link';
 
-import './SignIn.css'
+import './SignIn.css';
 
 class SignIn extends Component {
   constructor(props) {
@@ -58,7 +58,7 @@ class SignIn extends Component {
           </Form.Field>
 
           <Form.Field>
-            <Checkbox label='Keep me signed in'/>
+            <Checkbox label='Keep me signed in' />
           </Form.Field>
 
           <div className='password-help'>

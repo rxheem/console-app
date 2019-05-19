@@ -11,6 +11,7 @@
     "lodash": "^4.17.11",
     "mysql": "^2.17.1",
     "passport": "^0.4.0",
+    "push.js": "^1.0.9",
     "react": "^16.8.6",
     "react-animated-css": "^1.2.1",
     "react-dom": "^16.8.6",

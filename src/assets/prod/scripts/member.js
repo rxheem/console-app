@@ -1,6 +1,5 @@
 class Member {
   constructor() {
-
     // Personal Data
     this.firstName = '';
     this.lastName = '';

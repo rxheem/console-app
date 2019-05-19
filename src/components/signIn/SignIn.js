@@ -15,6 +15,11 @@ class SignIn extends Component {
     };
   }
 
+  // Handles the event changes for the email and password
+  handleChange(event) {
+    this.setState({ [event.target.id]: event.target.value });
+  }
+
   render() {
     return (
       <Container id='SignIn'>
@@ -34,6 +39,8 @@ class SignIn extends Component {
               id='username'
               name='username'
               placeholder='Enter username or email'
+              value={this.state.username}
+              onChange={this.handleChange.bind(this)}
             />
           </Form.Field>
 
@@ -44,6 +51,8 @@ class SignIn extends Component {
               id='password'
               name='password'
               placeholder='Enter password'
+              value={this.state.password}
+              onChange={this.handleChange.bind(this)}
             />
           </Form.Field>
 
@@ -54,6 +63,8 @@ class SignIn extends Component {
               id='churchCode'
               name='churchCode'
               placeholder='Enter church code'
+              value={this.state.churchCode}
+              onChange={this.handleChange.bind(this)}
             />
           </Form.Field>
 

@@ -1,0 +1,15 @@
+/* Sign In CSS */
+
+#SignIn {
+  padding-top: 15px;
+}
+
+
+.sign-in-header {
+  text-align: center;
+}
+
+#sign-in-form {
+  margin: auto;
+  max-width: 500px;
+}

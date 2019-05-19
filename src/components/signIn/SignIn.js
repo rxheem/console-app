@@ -97,7 +97,7 @@ class SignIn extends Component {
             </Link>
           </div>
 
-          <Button type='submit'>Sign In</Button>
+          <Button primary type='submit'>Sign In</Button>
         </Form>
       </Container>
     );

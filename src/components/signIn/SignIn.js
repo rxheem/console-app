@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Checkbox, Form, Container } from 'semantic-ui-react';
+import Link from 'react-router-dom/Link'
 
 import './SignIn.css'
 
@@ -60,7 +61,13 @@ class SignIn extends Component {
             <Checkbox label='Keep me signed in'/>
           </Form.Field>
 
-          <input type='submit' />
+          <div className='password-help'>
+            <Link className='fogot-password'>Need help signing in?</Link>
+          </div>
+
+          <Button primary type='submit'>
+            Sign In
+          </Button>
         </Form>
       </Container>
     );

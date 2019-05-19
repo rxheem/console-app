@@ -12,3 +12,12 @@
   margin: auto;
   max-width: 500px;
 }
+
+.password-help {
+  text-align: right;
+}
+
+.fogot-password :hover{
+  transition: 3s;
+  color: black;
+}

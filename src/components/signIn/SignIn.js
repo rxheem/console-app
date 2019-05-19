@@ -11,7 +11,7 @@ class SignIn extends Component {
     this.state = {
       username: '',
       password: '',
-      pin: '',
+      PIN: '',
       churchCode: '',
       requiresPIN: false
     };
@@ -77,11 +77,11 @@ class SignIn extends Component {
             </label>
             <input
               type='password'
-              id='pin'
-              name='pin'
+              id='PIN'
+              name='PIN'
               placeholder='Enter PIN'
               maxlength='4'
-              value={this.state.pin}
+              value={this.state.PIN}
               onChange={this.handleChange.bind(this)}
               style={{ width: '200px' }}
             />

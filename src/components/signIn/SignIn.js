@@ -22,10 +22,13 @@ class SignIn extends Component {
         </div>
         <br />
 
-        <Form id='sign-in-form'>
+        <Form id='sign-in-form' action=''>
           <Form.Field>
-            <label>First Name</label>
+            <label>Email or username</label>
+
+            {/* Autofocus the username field */}
             <input
+              autofocus='true'
               type='text'
               id='username'
               name='username'
@@ -56,6 +59,8 @@ class SignIn extends Component {
           <Form.Field>
             <Checkbox label='Keep me signed in'/>
           </Form.Field>
+
+          <input type='submit' />
         </Form>
       </Container>
     );

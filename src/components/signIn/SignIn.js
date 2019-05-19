@@ -71,7 +71,7 @@ class SignIn extends Component {
             />
           </Form.Field>
 
-          <Form.Field>
+          <Form.Field hidden>
             <label className='security-pin-text'>To protect your accout, please enter your 4 digit security PIN</label>
             <input
               type='password'

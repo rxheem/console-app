@@ -1,65 +1,45 @@
 import React, { Component } from 'react';
-import { Menu, Container, Input } from 'semantic-ui-react';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 class HomeNavigation extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      activeItem: 'home'
-    };
+    this.state = {};
   }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
   render() {
-    // Captures the state
-    const { activeItem } = this.state;
-
     return (
-      <Container style={{ paddingTop: '10px' }}>
-        <Menu secondary>
-          <Menu.Item
-            name='home'
-            active={activeItem === 'home'}
-            onClick={this.handleItemClick}
-            href='/'
-          />
-          <Menu.Item
-            name='aim'
-            active={activeItem === 'aim'}
-            onClick={this.handleItemClick}
-            href='/aim/'
-          />
-          <Menu.Item
-            name='join'
-            active={activeItem === 'join'}
-            onClick={this.handleItemClick}
-            href='/join/'
-          />
-          <Menu.Item
-            name='contact'
-            active={activeItem === 'contact'}
-            onClick={this.handleItemClick}
-            href='/contact/'
-          />
+      <div style={{ paddingTop: '10px' }}>
+        <Navbar bg='light' expand='lg'>
+          <Navbar.Brand href='#home'>Console Studios</Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='mr-auto'>
+              <Nav.Link href='/'>Home</Nav.Link>
+              <Nav.Link href='#link'>Link</Nav.Link>
+              <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
+                <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
+                <NavDropdown.Item href='#action/3.2'>
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item href='#action/3.3'>
+                  Something
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href='#action/3.4'>
+                  Separated link
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
 
-          {/* Right aligned menu */}
-          <Menu.Menu position='right'>
-            <Menu.Item>
-              <Input icon='search' placeholder='Search...' />
-            </Menu.Item>
-
-            {/* Log in button */}
-            <Menu.Item
-              name='sign in'
-              active={activeItem === 'sign in '}
-              onClick={this.handleItemClick}
-              href='/sign-in/'
-            />
-          </Menu.Menu>
-        </Menu>
-      </Container>
+            {/* Sign In */}
+            <Nav.Link href='/sign-in/'>Sign In</Nav.Link>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
     );
   }
 }

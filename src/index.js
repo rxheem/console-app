@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-// Semantic UI
-import 'semantic-ui-css/semantic.min.css';
+// Bootstrap
+import 'bootstrap/dist/css/bootstrap.css';
 
 // CSS Asstes
 import './assets/vendor/css/animate.css';
 
 // Scripts
 import './assets/prod/scripts/main';
+
+// Master CSS
+import './index.css';
 
 ReactDOM.render(
   <Router>

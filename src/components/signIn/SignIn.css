@@ -13,6 +13,11 @@
   max-width: 500px;
 }
 
+.security-pin-text {
+  color: red !important;
+  font-weight: normal !important;
+}
+
 .password-help {
   text-align: right;
 }

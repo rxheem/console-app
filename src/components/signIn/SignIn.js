@@ -11,7 +11,9 @@ class SignIn extends Component {
     this.state = {
       username: '',
       password: '',
-      churchCode: ''
+      pin: '',
+      churchCode: '',
+      requiresPIN: false
     };
   }
 
@@ -63,8 +65,23 @@ class SignIn extends Component {
               id='churchCode'
               name='churchCode'
               placeholder='Enter church code'
+              maxlength='4'
               value={this.state.churchCode}
               onChange={this.handleChange.bind(this)}
+            />
+          </Form.Field>
+
+          <Form.Field>
+            <label className='security-pin-text'>To protect your accout, please enter your 4 digit security PIN</label>
+            <input
+              type='password'
+              id='pin'
+              name='pin'
+              placeholder='Enter PIN'
+              maxlength='4'
+              value={this.state.pin}
+              onChange={this.handleChange.bind(this)}
+              style={{width: '200px'}}
             />
           </Form.Field>
 
@@ -76,9 +93,7 @@ class SignIn extends Component {
             <Link className='fogot-password'>Need help signing in?</Link>
           </div>
 
-          <Button primary type='submit'>
-            Sign In
-          </Button>
+          <Button type='submit'>Sign In</Button>
         </Form>
       </Container>
     );

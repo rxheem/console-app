@@ -29,7 +29,7 @@ class SignIn extends Component {
 
             {/* Autofocus the username field */}
             <input
-              autofocus='true'
+              autoFocus
               type='text'
               id='username'
               name='username'

@@ -71,8 +71,10 @@ class SignIn extends Component {
             />
           </Form.Field>
 
-          <Form.Field hidden>
-            <label className='security-pin-text'>To protect your accout, please enter your 4 digit security PIN</label>
+          <Form.Field hidden={!this.state.requiresPIN}>
+            <label className='security-pin-text'>
+              To protect your accout, please enter your 4 digit security PIN
+            </label>
             <input
               type='password'
               id='pin'
@@ -81,7 +83,7 @@ class SignIn extends Component {
               maxlength='4'
               value={this.state.pin}
               onChange={this.handleChange.bind(this)}
-              style={{width: '200px'}}
+              style={{ width: '200px' }}
             />
           </Form.Field>
 
@@ -90,7 +92,9 @@ class SignIn extends Component {
           </Form.Field>
 
           <div className='password-help'>
-            <Link className='fogot-password'>Need help signing in?</Link>
+            <Link to='/forgot-passowrd/' className='fogot-password'>
+              Need help signing in?
+            </Link>
           </div>
 
           <Button type='submit'>Sign In</Button>

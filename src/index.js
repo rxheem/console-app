@@ -7,10 +7,12 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 // Semantic UI
 import 'semantic-ui-css/semantic.min.css';
-import $ from "jquery";
 
-// Asstes
+// CSS Asstes
 import './assets/vendor/css/animate.css';
+
+// Scripts
+import './assets/prod/scripts/main';
 
 ReactDOM.render(
   <Router>

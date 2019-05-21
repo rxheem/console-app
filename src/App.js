@@ -7,8 +7,10 @@ import HomeNavigation from './components/homeNavigation/HomeNavigation';
 import Home from './components/home/Home';
 import SignIn from './components/signIn/SignIn';
 
+import Dashboard from './components/dashboard/Dashbaord';
+
 // Views
-import Footer from './views/footer/Footer'
+import Footer from './views/footer/Footer';
 
 class App extends Component {
   render() {
@@ -18,6 +20,8 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/sign-in/' component={SignIn} />
+
+          <Route exact path='/dashboard/' component={Dashboard} />
         </Switch>
         <Route path='/' component={Footer} />
       </div>

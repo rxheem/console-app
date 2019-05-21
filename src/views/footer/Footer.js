@@ -15,11 +15,7 @@ const Footer = props => {
       }}
     >
       <Nav className='justify-content-center'>
-        <FooterNavItem title='About' to='/about/' />
-        <FooterNavItem title='Terms Of Use' to='/terms-of-use/' />
-        <FooterNavItem title='Privacy Policy' to='/privacy-policy/' />
-        <FooterNavItem title='Join' to='/join/' />
-        <FooterNavItem title='Contact' to='/contact/' />
+        <span />
       </Nav>
     </footer>
   );

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Input } from 'semantic-ui-react';
 
 class Home extends Component {
   constructor(props) {
@@ -8,6 +7,11 @@ class Home extends Component {
 
     this.state = {};
   }
+
+  componentDidMount() {
+    document.title = 'Home | Console Membership Management Studio';
+  }
+
   render() {
     return (
       <div>

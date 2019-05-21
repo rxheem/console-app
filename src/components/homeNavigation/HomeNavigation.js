@@ -14,23 +14,23 @@ class HomeNavigation extends Component {
     return (
       <div>
         <Navbar bg='light' expand='lg'>
-          <Navbar.Brand href='#home'>Console Studios</Navbar.Brand>
+          <Navbar.Brand href='/'>Console Studios</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='mr-auto'>
               <Nav.Link href='/'>Home</Nav.Link>
-              <Nav.Link href='#link'>Link</Nav.Link>
-              <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
-                <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.2'>
-                  Another action
+              <Nav.Link href='/about/'>About</Nav.Link>
+              <NavDropdown title='Learn More' id='basic-nav-dropdown'>
+                <NavDropdown.Item href='/benefits/'>Benefits</NavDropdown.Item>
+                <NavDropdown.Item href='/privacy-policy/'>
+                  Privacy Policy
                 </NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.3'>
-                  Something
+                <NavDropdown.Item href='/terms-of-use/'>
+                  Terms of Use
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href='#action/3.4'>
-                  Separated link
+                <NavDropdown.Item href='/register/'>
+                  Register Your Church
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>

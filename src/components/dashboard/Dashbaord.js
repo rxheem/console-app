@@ -16,7 +16,9 @@ class Dashboard extends Component {
   render() {
     return (
       <React.Fragment>
-        <Switch />
+        <Switch>
+          <span />
+        </Switch>
       </React.Fragment>
     );
   }

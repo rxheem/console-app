@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { withRouter } from 'react-router-dom';
 
 class HomeNavigation extends Component {
   constructor(props) {
@@ -48,4 +49,4 @@ class HomeNavigation extends Component {
   }
 }
 
-export default HomeNavigation;
+export default withRouter(HomeNavigation);

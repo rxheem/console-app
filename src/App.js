@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { withRouter, Route, Switch } from 'react-router-dom';
 import ProtectedRoute from './ProtectedRoute';
 
 // Components
@@ -50,4 +50,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

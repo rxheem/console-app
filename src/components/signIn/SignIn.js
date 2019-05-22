@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { Button, Form, Container, Col, Row } from 'react-bootstrap';
 import Link from 'react-router-dom/Link';
+import { withRouter } from 'react-router-dom';
 
 import './SignIn.css';
 
 class SignIn extends Component {
   constructor(props) {
     super(props);
+
+    // Route change
+    this.handleChange = this.handleChange.bind(this);
 
     this.state = {
       username: '',
@@ -24,6 +28,11 @@ class SignIn extends Component {
   // Handles the event changes for the email and password
   handleChange(event) {
     this.setState({ [event.target.id]: event.target.value });
+  }
+
+  // Handles the form submission
+  handleSubmit = function() {
+
   }
 
   render() {
@@ -98,7 +107,7 @@ class SignIn extends Component {
                 </Link>
               </div>
 
-              <Button primary>Sign In</Button>
+              <Button primary onClick={this.handleSubmit}>Sign In</Button>
             </Form>
           </Col>
         </Row>
@@ -107,4 +116,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default withRouter(SignIn);

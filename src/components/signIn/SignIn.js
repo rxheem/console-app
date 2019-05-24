@@ -31,9 +31,7 @@ class SignIn extends Component {
   }
 
   // Handles the form submission
-  handleSubmit = function() {
-
-  }
+  handleSubmit = function() {};
 
   render() {
     return (
@@ -53,6 +51,7 @@ class SignIn extends Component {
 
             <Form id='sign-in-form' action=''>
               <Form.Group controlId='username'>
+                <span className='required'>* </span>
                 <Form.Label>Username or email</Form.Label>
                 <Form.Control
                   autoFocus
@@ -69,6 +68,7 @@ class SignIn extends Component {
               </Form.Group>
 
               <Form.Group controlId='password'>
+                <span className='required'>* </span>
                 <Form.Label>Password</Form.Label>
                 <Form.Control
                   type='password'
@@ -79,6 +79,7 @@ class SignIn extends Component {
               </Form.Group>
 
               <Form.Group controlId='churchCode'>
+                <span className='required'>* </span>
                 <Form.Label>Church Code</Form.Label>
                 <Form.Control
                   maxLength='5'
@@ -107,7 +108,9 @@ class SignIn extends Component {
                 </Link>
               </div>
 
-              <Button primary onClick={this.handleSubmit}>Sign In</Button>
+              <Button primary onClick={this.handleSubmit}>
+                Sign In
+              </Button>
             </Form>
           </Col>
         </Row>

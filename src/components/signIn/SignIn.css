@@ -2,6 +2,14 @@
 
 #SignIn {
   padding-top: 15px;
+  background-image: url('https://images.unsplash.com/photo-1555759446-cf7598d7c14c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+#Sign-In .tex-mute. form-text {
+  color: white !important;
 }
 
 .sign-in-header {
@@ -11,6 +19,10 @@
 #sign-in-form {
   margin: auto;
   max-width: 500px;
+}
+
+.white {
+  color: white !important;
 }
 
 .security-pin-text {

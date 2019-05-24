@@ -15,7 +15,7 @@ class HomeNavigation extends Component {
     if (!this.props.isAuthed) {
       return (
         <div>
-          <Navbar bg='light' expand='lg'>
+          <Navbar bg='light' expand='lg' id='HomeNavigation'>
             <Navbar.Brand href='/'>Console Studios</Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id='basic-navbar-nav'>
